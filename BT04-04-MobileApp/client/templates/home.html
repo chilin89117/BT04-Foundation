@@ -1,0 +1,94 @@
+---
+name: home
+url: /
+---
+
+<script>
+	$(document).ready(function(){
+		// Hide message
+		$('#msg').hide();	
+	
+		if(localStorage['todos']){
+			var todos = JSON.parse(localStorage['todos']);
+		} else {
+			var todos = [];
+		}
+
+		function appendTodo(todo){
+			$('#todoList').append('<li><a data-todo="' + todo + 
+				'" class="aTodo" href="">' + todo + '</a></li>');
+		}
+
+		for(var i = 0; i < todos.length; i++){
+			appendTodo(todos[i]);
+		}
+
+		$(document).on('click','#addTodo', function(){
+			var todo = $('#todo').val();
+
+			// Add todo to array
+			todos.push(todo);
+
+			// Save to local storage
+			localStorage['todos'] = JSON.stringify(todos);
+
+			// Append to the list
+			appendTodo(todo);
+
+			// Reset Form
+			$('#todo').val("").focus();
+			
+			// Display message
+			$('#msg').fadeIn(200);
+		});
+		
+		$(document).on('click', '.aTodo', function () {
+			var todos = JSON.parse(localStorage['todos']);
+			var cur_todo = $(this).data('todo');
+			$(this).parent('li').css('border', 0).empty();
+			for (var i = 0; i < todos.length; i++) {
+				if (cur_todo == todos[i]) {
+					todos.splice(i, 1);
+				}
+			}
+			localStorage['todos'] = JSON.stringify(todos);
+		});
+	});
+</script>
+
+
+<div class="grid-container">
+  <h1>Your Todos</h1>
+  
+  <!-- button with icon opens left-side panel for adding todos -->
+  <a zf-open="add-todo" class="button">
+		<img zf-iconic="" icon="circle-check" size="small">Add Todo
+	</a>
+	
+	<!-- left-side panel -->
+	<div zf-panel="" id="add-todo">
+		<a zf-close="" class="close-button">×</a>
+		<h3>Add Todo</h3>
+		<div id="msg">Todo Added!</div>
+		<form>
+			<div class="row">
+				<div class="large-12 columns">
+					<label>Todo
+						<input type="text" id="todo" />	
+					</label>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="large-12 columns">
+					<button id="addTodo" type="submit" class="button">Add Todo</button>
+				</div>		
+			</div>
+		</form>
+	</div>
+  
+  <!-- list of todos to be populated from localStorage -->
+  <section class="block-list">
+  		<header>Latest Todos	</header>
+  		<ul id="todoList">	</ul>
+  </section>
+</div>

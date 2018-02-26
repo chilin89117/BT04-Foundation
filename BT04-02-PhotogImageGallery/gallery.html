@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BT04-02-PhotogImageGallery | Gallery</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/vendor/modernizr.js"></script>
+	</head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="large-4 columns">
+          <img src="img/logo.png">
+        </div>
+        <div class="large-8 columns">
+          <ul class="inline-list main-nav">	<!-- "main-nav" is custom class" -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="gallery.html">View Image Gallery</a></li>
+            <!-- see Foundation docs for info on "data-reveal-id" -->
+            <!-- under Callouts & Prompts - Reveal Modal -->
+            <li><a href="" data-reveal-id="contactModal">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="row">
+			<div class="large-12 columns">
+				<!-- see Foundation docs for info on "clearing-thumbs" and "data-clearing" -->
+				<!-- under Media - Clearing Lightbox -->
+				<ul class="gallery clearing-thumbs" data-clearing>
+					<li>
+						<a href="img/city1.jpg">
+							<img class="th" src="img/city1.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="img/city2.jpg">
+							<img class="th" src="img/city2.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="img/city3.jpg">
+							<img class="th" src="img/city3.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="img/city4.jpg">
+							<img class="th" src="img/city4.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="img/city5.jpg">
+							<img class="th" src="img/city5.jpg">
+						</a>
+					</li>
+					<li>
+						<a href="img/city6.jpg">
+							<img class="th" src="img/city6.jpg">
+						</a>
+					</li>
+				</ul>
+			</div>
+    </div>
+    <footer>
+      <p>Copyright &copy; 2015-2018 Brad Traversy Photography</p>
+    </footer>
+    <!-- contactModal code -->
+    <div id="contactModal" class="reveal-modal small" data-reveal
+    			aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+			<h2 id="modalTitle">Contact Me</h2>
+			<p class="lead">Please use this form for all inquiries</p>
+			<form>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Name
+							<input type="text" placeholder="Enter name" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Email
+							<input type="text" placeholder="Enter email" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="large-12 columns">
+						<label>Message
+							<textarea placeholder="Enter message" rows="6"></textarea>
+					</div>
+				</div>
+				<div>
+					<input type="submit" class="button" value="Send" />				
+				</div>
+			</form>
+			<a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    	</div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

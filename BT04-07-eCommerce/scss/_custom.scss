@@ -1,0 +1,102 @@
+body {
+	font-size: 13px;
+}
+
+a {
+	color: $primary-color;
+}
+
+button, .button {
+	background: $primary-color;
+}
+
+button:hover, .button:hover {
+	background: $secondary-color;
+}
+
+header {
+	background: $secondary-color;
+	color: white;
+	height: 35px;
+	
+	ul {
+		float: right;
+		list-style: none;
+		padding-top: 5px;	
+	}
+	
+	li {
+		float: left;
+		padding: 0 10px;
+		list-style: none;	
+	}
+	
+	a {
+		color: white;	
+	}
+}
+
+.header-cart {
+	float: right;
+	padding: 25px 10px 0 0;
+}
+
+.top-bar {
+	margin-bottom: 30px;
+	
+	a:hover, a.active {
+		background: $primary-color !important;
+	}
+}
+
+.showcase-menu {
+	border: 1px solid #ccc;
+	padding: 0;
+	
+	h3 {
+		background: $primary-color;
+		color: white;
+		padding: 5px;
+		margin: 1px 1px 0 1px;
+		font-size: 18px;
+	}
+	
+	li {
+		border-bottom: 1px dashed #ccc;	
+	}
+	
+	li:last-child {
+		border-bottom: 0;	
+	}
+}
+
+.phone {
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+footer ul {
+	font-size: 12px;
+}
+
+.small-pics img {
+	width: 65px;
+	float: left;
+	padding: 3px;
+	border: 1px solid #ccc;
+}
+
+.small-pics img:hover {
+	border-color: $primary-color;
+}
+
+.cart img {
+	width: 120px;
+	display: block;
+	margin: auto;
+}
+
+.cart a.button.medium {
+	width: 203px;
+	margin-right: 20px;
+}

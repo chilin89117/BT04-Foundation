@@ -1,0 +1,44 @@
+a {
+	color: #666666;
+}
+
+a:hover {
+	color: #cccccc;
+}
+
+a.active {
+	color: #cccccc;
+}
+
+h3 {
+	border-bottom: 1px solid #ccc;
+}
+
+.main-nav {
+	margin-top: 30px;
+	padding: 10px;
+	border-top: 1px dashed #ccc;
+	border-bottom: 1px dashed #ccc;
+}
+
+.main-nav li {
+	margin-left: 30px;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+footer {
+	background: #333;
+	color: #fff;
+	height: 80px;
+	padding-top: 30px;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.gallery li {
+	width: 32%;
+	margin-bottom: 30px;
+}

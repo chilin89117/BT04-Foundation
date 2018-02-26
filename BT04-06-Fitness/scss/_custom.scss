@@ -1,0 +1,69 @@
+body {
+	background: $body-bg !important;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+	color: white;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.top-bar {
+	margin-top: 30px;
+}
+
+.slider {
+	margin-top: 20px;
+}
+
+.orbit-container .orbit-slides-container > * .orbit-caption {
+	background: $primary-color;
+	color: white;
+	width: 80%;
+	opacity: 0.6;
+	
+	h1 {
+		font-size: 2.7em;
+		font-weight: 300;
+		color: white;
+		text-transform: uppercase;
+		line-height: 1.3em;	
+	}
+	
+	a {
+		color: white;
+		font-weight: 900;
+	}
+}
+
+.icons {
+	text-align: center;
+	background: black;
+	width: 100%;
+	
+	.large-3 {
+		margin: 30px 0;	
+	}
+	
+	i.fa {
+		font-size: 50px ;
+		background: #555;
+		padding: 30px;
+		border-radius: 50%;
+		margin-bottom: 5px;
+	}
+}
+
+.panel {
+	background: #444;
+	color: white;
+	border-color: #888;
+	
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;
+	}
+}
+
+.about .fa {
+	font-size: 90px;
+}

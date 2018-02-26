@@ -1,0 +1,85 @@
+body {
+	background: $secondary-color;
+}
+
+.button {
+	background: $secondary-color;
+}
+
+.top-bar {
+	height: 60px;
+	padding-top: 8px;
+	background: $primary-color;
+}
+
+.login-box {
+	background: white;
+	width: 500px;
+	padding: 30px;
+	margin-top: 30px;
+}
+
+.icons {
+	margin: 20px 0;
+	
+	.fa {
+		color: white;
+		display: block;
+		margin: auto;
+		font-size: 70px;
+	}
+	
+	label {
+		color: white;	
+	}
+}
+
+.item {
+	text-align: center;
+	background: $primary-color !important;
+	overflow: auto;
+	width: 100%;
+	height: auto;
+	display: block;
+	padding: 15px 0 10px 0;
+}
+
+.item:hover {
+	background: $hover-color !important;
+}
+
+.item.active {
+	background: $active-color !important;
+}
+
+.white-bg {
+	background: white;
+	overflow: auto;
+	padding: 20px;
+}
+
+.primary-bg {
+	background: $primary-color;
+	overflow: auto;
+	padding: 20px;
+	
+	label {
+		color: white;	
+	}
+}
+
+footer {
+	background: $primary-color;
+	height: 80px;
+	margin-top: 30px;
+
+	p {
+		color: white;
+		text-align: center;	
+		padding-top: 20px;
+	}
+}
+
+.logout-btn, .add-btn {
+	margin-right: 20px;
+}

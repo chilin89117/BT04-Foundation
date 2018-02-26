@@ -1,0 +1,33 @@
+/*
+Copied from https://codex.wordpress.org/Theme_Development
+
+Theme Name: U16
+Theme URI: http://saharadb.com
+Author: Chi Lin
+Author URI: http://saharadb.com
+Description: The 2015 Basic Foundation 5 Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: U16
+*/
+
+.menu li {
+	background: #008cba;
+	list-style: none;
+	padding: 10px;
+	float: left;
+	margin-right: 4px;
+}
+
+.menu li:hover {
+	background: #f4f4f4;
+}
+
+.menu li a {
+	color: white;
+}
+
+.menu li:hover a {
+	color: #008cba;
+}
